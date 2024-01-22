@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('adminsite/', admin.site.urls),
+    path('adminsite/doc', include('django.contrib.admindocs.urls')),
     path("", include('newapp.urls')) # Moves us into newapp as the main app.
 ]
