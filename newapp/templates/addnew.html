@@ -1,0 +1,10 @@
+<html>
+    <body>
+        <h1>Add new customer</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ formset }}
+            <input type="submit" value="Ok">
+        </form>
+    </body>
+</html>
