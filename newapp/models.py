@@ -7,4 +7,4 @@ class Customer(models.Model):
     mobile = models.IntegerField()
 
     def __str__(self):
-        self.name
+        return str(self.name)
